@@ -1,13 +1,24 @@
-// package.json
 {
+
   "name": "github-actions-demo",
+
   "version": "1.0.0",
-  "description": "A simple app for our GitHub Actions demo",
+
+  "description": "A simple app for GitHub Actions demo",
+
   "main": "app.js",
+
   "scripts": {
+
     "start": "node app.js"
+
   },
+
   "dependencies": {
+
     "express": "^4.18.2"
+
   }
+
 }
+ 
