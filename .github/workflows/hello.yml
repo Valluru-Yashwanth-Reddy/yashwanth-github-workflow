@@ -1,0 +1,24 @@
+# A name for your workflow, which will be displayed on the Actions tab
+name: Hello GitHub Actions
+
+# The event that triggers this workflow. Here, it's a push to any branch.
+on: [push]
+
+# A container for all the jobs that will run
+jobs:
+  # The ID of our first job (can be anything you like)
+  say-hello:
+    # The type of runner machine to use for this job
+    runs-on: ubuntu-latest
+
+    # The sequence of steps to be executed in this job
+    steps:
+      # A step is a dictionary, and 'name' is an optional description
+      - name: Print a greeting
+        # 'run' executes a command-line command
+        run: echo "Hello, World! GitHub Actions is running!"
+
+      - name: Print a multiline message
+        run: |
+          echo "This is the first line."
+          echo "This is the second line."
